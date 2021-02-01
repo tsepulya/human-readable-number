@@ -1,7 +1,7 @@
 module.exports = function toReadable(number) {
     n = number.toString();
     array1 = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
-    array2 = ['twenty', 'thirty', 'fourty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+    array2 = ['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
     let beforeHundred = function (n) {
         if ((n.length === 1) || (n.length === 2 && n[0] === '1')) {
             return array1[n];
