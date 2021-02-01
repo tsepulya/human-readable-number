@@ -14,8 +14,8 @@ module.exports = function toReadable(number) {
 
     if (n.length < 3) {
         return beforeHundred(n);
-    } else if (n === '100') {
-        return 'one hundred';
+    } else if (number % 100 === 0) {
+        return array1[n[0]] + ' hundred';
     } else if (n[1] === '0') {
         return array1[n[0]] + ' hundred ' + beforeHundred(n.slice(2));
     } else {
